@@ -1,7 +1,7 @@
 <x-layout>
-
     <x-slot:heading>
-        Contact Us
+        About Us
     </x-slot:heading>
-    <h1>Hello from contact</h1>
+
+    <h1>Welcome From About</h1>
 </x-layout>
