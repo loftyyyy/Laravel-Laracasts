@@ -39,7 +39,7 @@ Class Jobs{
         $job = Arr::first(Jobs::all(), fn($job) => $job['id'] === (int) $id);
 
         if(!$job){
-            Abort(404);
+            abort(404);
         }
 
         return $job;
