@@ -11,7 +11,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/jobs', function () {
-    return view('jobs', ['jobs' => Jobs::all()]);
+    return view('jobs', ['jobs' => Jobs::all()->toArray()]);
 })->name('jobs');
 
 Route::get('/jobs/{id}', function ($id){

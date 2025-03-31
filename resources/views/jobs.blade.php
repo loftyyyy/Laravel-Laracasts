@@ -5,8 +5,8 @@
 
         <li>
             <a href="jobs/{{$job['id']}}" class="hover:underline">
-                Title: <strong>{{$job['Title']}}</strong>
-                Salary: <strong>{{$job['Salary']}}</strong>
+                Title: <strong>{{$job['job_title']}}</strong>
+                Salary: <strong>{{$job['job_salary']}}</strong>
 
             </a>
 
