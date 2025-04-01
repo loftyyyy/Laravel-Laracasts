@@ -7,7 +7,7 @@
         <h1 class="text-9xl">ERROR, JOB NOT FOUND</h1>
     @else
         <x-slot:heading>
-            {{$job['Title']}}
+            Job
         </x-slot:heading>
 
         <h1 class="text-5xl font-bold mb-3">Job Information</h1>
