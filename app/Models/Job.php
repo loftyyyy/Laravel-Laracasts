@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Arr;
 
-Class Jobs extends Model{
+Class Job extends Model{
 
     use HasFactory, Notifiable;
 
@@ -19,6 +19,10 @@ Class Jobs extends Model{
     public function employer(){
 
         return $this->belongsTo(Employer::class);
+    }
+
+    public function tags(){
+        return $this->belongsToMany(Tag::class, foreignPivotKey: "job_listing_id");
     }
 }
 
